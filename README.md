@@ -1,5 +1,5 @@
 # nasaspaceapp
-##LandsideStrike
+## LandsideStrike
 the app aims at preventing any casualities caused due to Landslide.
 Landslide is caused due to some natural conditions in the particular region over the time.
 The information about previous landslides is provided by NASA in the form JSON file. 
