@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/location"
+            android:title="Current Location" />
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/mapp"
+            android:title="Map View" />
+        <item
+            android:id="@+id/predicition"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Prediction" />
+        <item
+            android:id="@+id/rescue"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Rescue" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/shareapp"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share app" />
+            <item
+                android:id="@+id/Settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

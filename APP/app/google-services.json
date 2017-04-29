@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "564940452446",
+    "firebase_url": "https://landslidesstrike.firebaseio.com",
+    "project_id": "landslidesstrike",
+    "storage_bucket": "landslidesstrike.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564940452446:android:74197745c64ce5ab",
+        "android_client_info": {
+          "package_name": "me.jaxbot.landslidesstrike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564940452446-s7p5i2er8nfk2gvb2lef4v5tuo2tpskt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.jaxbot.landslidesstrike",
+            "certificate_hash": "98aa8079c85adee4093caf282887b63519d78aec"
+          }
+        },
+        {
+          "client_id": "564940452446-a600puhm33gejv1j54a1ecq55c5rqeno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwqtNne7pLq661iruu_uV9IF5uiaXYLnE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564940452446-a600puhm33gejv1j54a1ecq55c5rqeno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
