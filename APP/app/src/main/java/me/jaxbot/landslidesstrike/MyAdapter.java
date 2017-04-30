@@ -43,14 +43,7 @@ public class MyAdapter  extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.date.setText(mtimeline.get(position).date);
         holder.injuries.setText(mtimeline.get(position).injuries);
         holder.countryname.setText(mtimeline.get(position).countryname);
-//        Picasso.with(mContext).load(mtimeline.get(position).user.profile_image_url).into(holder.imageView1);
-//        Picasso.with(mContext).load(mtimeline.get(position).user.profile_image_url)
-////                .placeholder(holder.imageView1)
-//                .resize(200, 200)
-//
-//                .into(holder.imageView1);
-//       String str= mtimeline.get(position).entities.media.get(0).getMedia_url();
-        //      Picasso.with(mContext).load(str).into(holder.imageView2);
+
 
         //    Log.d("mmm",mtimeline.get(position).created_at+" "+mtimeline.get(position).created_at);
 
@@ -59,7 +52,7 @@ public class MyAdapter  extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public int getItemCount() {
         return mtimeline.size();
-//        return 1;
+
     }
     public static class ViewHolder extends RecyclerView.ViewHolder
     {

@@ -12,10 +12,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="230dp"
+        android:layout_width="match_parent"
         android:layout_height="75dp"
-
-        app:srcCompat="@drawable/nasaa" />
+        android:scaleType = "centerCrop"
+        app:srcCompat="@drawable/nasaa"
+        android:layout_weight="0.27" />
 
     <TextView
         android:layout_width="match_parent"
@@ -23,17 +24,23 @@
    android:paddingLeft="10dp"
         android:text="Menu"
         android:textSize="25dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
         android:textStyle="bold"
+        android:textColor="#00f"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_weight="0.53" />
+        android:layout_weight="0.50" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="company name"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:layout_weight="0.23" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="RADON"
+        android:background="@color/colorAccent"
+        android:textColor="#00f"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

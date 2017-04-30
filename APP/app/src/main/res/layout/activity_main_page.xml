@@ -21,10 +21,11 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main_page"
         app:menu="@menu/activity_main_page_drawer" />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+   <fragment
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/fragment1"
+       android:name="me.jaxbot.landslidesstrike.MyFragment"
+       ></fragment>
 
 </android.support.v4.widget.DrawerLayout>

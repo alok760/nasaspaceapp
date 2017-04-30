@@ -2,18 +2,24 @@ package me.jaxbot.landslidesstrike;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Testmaps extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
 
+    private GoogleMap mMap;
+    Marker marker;
+    EditText origin;
+    Button gobutton;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {

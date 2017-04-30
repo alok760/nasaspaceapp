@@ -10,6 +10,8 @@ import retrofit2.http.GET;
  */
 
 public interface ApiInterface {
-    @GET("resource/tfkf-kniw.json")
+   // @GET("resource/tfkf-kniw.json")
+    @GET("bins/bspdt")
     Call<ArrayList<Webclass>> getcourses();
 }
+// https://api.myjson.com/bins/bspdt

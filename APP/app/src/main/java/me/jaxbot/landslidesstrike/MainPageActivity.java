@@ -1,5 +1,6 @@
 package me.jaxbot.landslidesstrike;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -38,22 +39,21 @@ public class MainPageActivity extends AppCompatActivity
         setContentView(R.layout.activity_main_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        user = new ArrayList<>();
         recyclerView = (RecyclerView) findViewById(R.id.recycle);
         recyclerView.setHasFixedSize(true);
 
         myAdapter=new MyAdapter(this,user);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        myAdapter = new MyAdapter(this, user);
         recyclerView.setAdapter(myAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -69,11 +69,15 @@ public class MainPageActivity extends AppCompatActivity
                     @Override
                     public void onItemClick(View view, int position) {
                         Intent ii = new Intent();
-                        ii.setAction(Intent.ACTION_VIEW);
-                        Uri uri = Uri.parse("user.get(position).getSource_link()");
-                        ii.setData(uri);
-                        startActivity(ii);
+//                        ii.setAction(Intent.ACTION_VIEW);
 
+                     String mm = user.get(position).getSource_link();
+//                        ii.setData(uri);
+//                        startActivity(ii);
+
+                        ii.setClass(MainPageActivity.this,Web.class);
+                        ii.putExtra("url",mm);
+                        startActivity(ii);
 
                     }
 
@@ -89,7 +93,8 @@ public class MainPageActivity extends AppCompatActivity
     private void fetchUsers() {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://data.nasa.gov/")
+                //.baseUrl("https://data.nasa.gov/")
+                .baseUrl("https://api.myjson.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -145,7 +150,10 @@ public class MainPageActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent iy = new Intent();
+            iy.setClass(MainPageActivity.this,Gestures.class);
+            startActivity(iy);
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -158,9 +166,18 @@ public class MainPageActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.location) {
+//            FragmentManager fragmentManager = getFragmentManager();
+//            fragmentManager.beginTransaction()
+//                    .replace(R.id., Mymap)
+//                    .commit();
+            Intent i1 = new Intent();
+            i1.setClass(this,TestActivity.class);
+            startActivity(i1);
             // Handle the camera action
         } else if (id == R.id.map) {
-
+            Intent i1 = new Intent();
+            i1.setClass(this,MasWeb.class);
+            startActivity(i1);
         } else if (id == R.id.predicition) {
 
         } else if (id == R.id.rescue) {

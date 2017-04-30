@@ -7,7 +7,7 @@ package me.jaxbot.landslidesstrike;
 public class Webclass {
     String countryname;
     String date;
-    int injuries;
+    String injuries;
     String source_link;
 
     public String getSource_link() {
@@ -35,11 +35,11 @@ public class Webclass {
         this.date = date;
     }
 
-    public int getInjuries() {
+    public String getInjuries() {
         return injuries;
     }
 
-    public void setInjuries(int injuries) {
+    public void setInjuries(String injuries) {
         this.injuries = injuries;
     }
 }

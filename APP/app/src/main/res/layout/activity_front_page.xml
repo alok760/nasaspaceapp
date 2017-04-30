@@ -9,20 +9,20 @@
     tools:context="me.jaxbot.landslidesstrike.frontPage">
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Continue..."
-            android:layout_marginTop="400"
-            android:layout_marginLeft="100dp"
-            android:id="@+id/continueman"
-            android:background="@color/colorAccent"/>
-
         <ImageView android:id="@+id/splashscreen" android:layout_width="match_parent"
-            android:layout_height="559dp"
+            android:layout_height="match_parent"
             android:src="@drawable/finallydone"
-            android:layout_gravity="center"
+            android:scaleType = "centerCrop"
             />
 
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Continue..."
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/continueman"
+        android:background="@color/colorAccent"/>
 
 </FrameLayout>
